@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+.primary-btn {
+  background-color: #f948b2;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.secondary-btn {
+  background-color: #4ec5f7;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: bold;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.nav-container {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px saddlebrown;
+  padding: 5px 10px;
+  box-shadow: 0px 5px 5px -5px rgba(188, 182, 182, 0.75);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container img {
+  height: 30px;
+}
+.nav-item-container {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-item-container li {
+  margin-right: 10px;
+}
+
+.nav-item-logo {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.nav-item-logo img {
+  margin-left: 5px;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-container img {
+  width: 100%;
+  height: 400px;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.subtitle {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+.banner-features {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.highlight {
+  color: #f948b2;
+}
+.banner-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-container img {
+  height: 300px;
+  width: 100%;
+}
+.hero-img-container,
+.hero-text-container {
+  width: 50%;
+}
+.hero-text-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: end;
+}
+.text-features {
+  margin: 10px 0px;
+  color: #534c64;
+}
+.feature-title {
+  text-align: center;
+  margin: 15px 0;
+}
+.features-card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.feature-card img {
+  width: 100%;
+}
+
+/* hot-features-container */
+.hot-features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+.hot-text-container {
+  display: flex;
+  align-items: center;
+}
+.main {
+  height: 500px;
+  width: 100%;
+}
+.image-container {
+  position: relative;
+}
+.image-container img.extra {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+}
+/* pill */
+.pill-container {
+  margin: 20px;
+  height: 300px;
+}
+.pill-cards {
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.pill-card {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.pill-card:hover {
+  border: 2px solid #f948b2;
+  border-radius: 25px;
+  color: #f948b2;
+}
+.pill-card p {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #0b0223;
+  height: 350px;
+  color: white;
+}
+.footer-container {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ft-logo {
+  color: white;
+  margin: 10px 0;
+}
+.ft-link,
+.ft-terms {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  gap: 15px;
+}
+.ft-link,
+.ft-terms li {
+  list-style: none;
+}
+.ft-terms {
+  color: #534c64;
+}
+@media screen and (max-width: 566px) {
+  .nav-container,
+  .nav-item-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+  }
+  .nav-container {
+    height: auto;
+  }
+  .banner-container,
+  .hot-features-container {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+  .banner-text-container {
+    margin: 10px 0;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-img-container,
+  .hero-text-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .features-card-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .feature-card img {
+    height: 350px;
+  }
+  .pill-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ft-link,
+  .ft-terms {
+    gap: 10px;
+    padding: 10px;
+  }
+}
